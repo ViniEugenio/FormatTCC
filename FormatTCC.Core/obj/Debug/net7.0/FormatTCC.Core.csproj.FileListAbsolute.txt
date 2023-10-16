@@ -1,0 +1,12 @@
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\bin\Debug\net7.0\FormatTCC.Core.deps.json
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\bin\Debug\net7.0\FormatTCC.Core.dll
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\bin\Debug\net7.0\FormatTCC.Core.pdb
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.csproj.AssemblyReference.cache
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.AssemblyInfoInputs.cache
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.AssemblyInfo.cs
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.csproj.CoreCompileInputs.cache
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.dll
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\refint\FormatTCC.Core.dll
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\FormatTCC.Core.pdb
+D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Core\obj\Debug\net7.0\ref\FormatTCC.Core.dll
