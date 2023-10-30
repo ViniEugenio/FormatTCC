@@ -53,6 +53,10 @@ namespace FormatTCC.Infrastructure.Migrations
                     b.Property<DateTimeOffset?>("LockoutEnd")
                         .HasColumnType("datetimeoffset");
 
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(250)");
+
                     b.Property<string>("NormalizedEmail")
                         .HasMaxLength(256)
                         .HasColumnType("nvarchar(256)");
@@ -71,10 +75,16 @@ namespace FormatTCC.Infrastructure.Migrations
                         .HasColumnType("bit");
 
                     b.Property<DateTime>("RegisterDate")
-                        .HasColumnType("SMALLDATETIME");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("SMALLDATETIME")
+                        .HasDefaultValueSql("GETDATE()");
 
                     b.Property<string>("SecurityStamp")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("SurName")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(250)");
 
                     b.Property<bool>("TwoFactorEnabled")
                         .HasColumnType("bit");

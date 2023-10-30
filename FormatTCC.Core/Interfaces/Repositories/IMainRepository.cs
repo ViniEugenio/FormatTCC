@@ -15,7 +15,6 @@ namespace FormatTCC.Core.Interfaces.Repositories
         void Update(T item);
         void UpdateRange(IEnumerable<T> items);
         Task<bool> AnyAsync(Expression<Func<T, bool>> predicate);
-        bool Any(Expression<Func<T, bool>> predicate);
 
     }
 }

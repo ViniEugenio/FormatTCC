@@ -30,7 +30,9 @@ namespace FormatTCC.Infrastructure.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
-                    RegisterDate = table.Column<DateTime>(type: "SMALLDATETIME", nullable: false),
+                    Name = table.Column<string>(type: "VARCHAR(250)", nullable: false),
+                    SurName = table.Column<string>(type: "VARCHAR(250)", nullable: false),
+                    RegisterDate = table.Column<DateTime>(type: "SMALLDATETIME", nullable: false, defaultValueSql: "GETDATE()"),
                     Active = table.Column<bool>(type: "BIT", nullable: false, defaultValue: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),

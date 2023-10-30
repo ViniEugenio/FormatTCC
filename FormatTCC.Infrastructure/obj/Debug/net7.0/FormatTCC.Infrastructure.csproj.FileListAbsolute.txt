@@ -15,3 +15,21 @@ D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.pdb
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.genruntimeconfig.cache
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\ref\FormatTCC.Infrastructure.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Infrastructure.deps.json
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Infrastructure.runtimeconfig.json
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Infrastructure.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Infrastructure.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Core.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\bin\Debug\net7.0\FormatTCC.Core.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.csproj.AssemblyReference.cache
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.AssemblyInfoInputs.cache
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.AssemblyInfo.cs
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.csproj.CoreCompileInputs.cache
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.csproj.CopyComplete
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\refint\FormatTCC.Infrastructure.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.genruntimeconfig.cache
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\ref\FormatTCC.Infrastructure.dll
+D:\Repositórios\FormatTCC\FormatTCC.Infrastructure\obj\Debug\net7.0\FormatTCC.Infrastructure.sourcelink.json

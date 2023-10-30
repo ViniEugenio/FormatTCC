@@ -1,29 +1,32 @@
 ﻿using FluentValidation;
 using FormatTCC.Application.Commands.AddUser;
 using FormatTCC.Application.Helpers.Errors;
-using FormatTCC.Core.Interfaces.Repositories;
+using FormatTCC.Application.Helpers.Messages;
 
 namespace FormatTCC.Application.Commands.CommandValidators
 {
     public class AddUserCommandValidator : AbstractValidator<AddUserCommand>
     {
 
-        private readonly IUserRepository userRepository;
-
-        public AddUserCommandValidator(IUserRepository userRepository)
+        public AddUserCommandValidator()
         {
 
-            this.userRepository = userRepository;
+            RuleFor(user => user.Name)
+                .NotNull()
+                .NotEmpty()
+                .WithMessage(UserErrors.EmptyName);
+
+            RuleFor(user => user.SurName)
+                .NotNull()
+                .NotEmpty()
+                .WithMessage(UserErrors.EmptySurName);
 
             RuleFor(user => user.Email)
                 .NotNull()
                 .NotEmpty()
                 .WithMessage(UserErrors.EmptyEmail)
                 .EmailAddress()
-                .WithMessage(UserErrors.InvalidEmail)
-                .Must(IsDuplicatedEmail)
-                .WithMessage(UserErrors.DuplicateEmail);
-
+                .WithMessage(UserErrors.InvalidEmailFormat);
 
             RuleFor(user => user.UserName)
                 .NotEmpty()
@@ -42,11 +45,5 @@ namespace FormatTCC.Application.Commands.CommandValidators
                 .WithMessage(UserErrors.ConfirmedPasswordInvalid);
 
         }
-
-        private bool IsDuplicatedEmail(string email)
-        {
-            return !userRepository.Any(user => user.Email == email);
-        }
-
     }
 }

@@ -13,3 +13,19 @@ D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Application\bin\Debug\net7.0
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Core.pdb
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.csproj.AssemblyReference.cache
 D:\Repositórios\Enviar Arquivo\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.csproj.CopyComplete
+D:\Repositórios\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Application.deps.json
+D:\Repositórios\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Application.dll
+D:\Repositórios\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Application.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Core.dll
+D:\Repositórios\FormatTCC\FormatTCC.Application\bin\Debug\net7.0\FormatTCC.Core.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.csproj.AssemblyReference.cache
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.AssemblyInfoInputs.cache
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.AssemblyInfo.cs
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.csproj.CoreCompileInputs.cache
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.csproj.CopyComplete
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.dll
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\refint\FormatTCC.Application.dll
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.pdb
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\ref\FormatTCC.Application.dll
+D:\Repositórios\FormatTCC\FormatTCC.Application\obj\Debug\net7.0\FormatTCC.Application.sourcelink.json

@@ -75,9 +75,5 @@ namespace FormatTCC.Infrastructure.Persistence.Repositories
             return await db.AnyAsync(predicate);
         }
 
-        public bool Any(Expression<Func<T, bool>> predicate)
-        {
-            return db.Any(predicate);
-        }
     }
 }

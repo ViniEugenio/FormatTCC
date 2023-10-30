@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FormatTCC.Application.Models.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 
@@ -17,7 +18,9 @@ namespace FormatTCC.API.Filters
             {
 
                 var errors = context.ModelState.GetErrorsMessages();
-                context.Result = new BadRequestObjectResult(errors);
+
+                var inputResult = new InputResultViewModel("As informações de entrada não são válidas", errors);
+                context.Result = new BadRequestObjectResult(inputResult);
 
             }
 
@@ -29,13 +32,13 @@ namespace FormatTCC.API.Filters
 public static class ModelStateExtensions
 {
 
-    public static List<string> GetErrorsMessages(this ModelStateDictionary modelState)
+    public static string[] GetErrorsMessages(this ModelStateDictionary modelState)
     {
 
         return modelState
-            .SelectMany(model => model.Value.Errors)
+            .Select(model => model.Value.Errors.Last())
             .Select(error => error.ErrorMessage)
-            .ToList();
+            .ToArray();
 
     }
 

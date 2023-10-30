@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj": {}
+    "D:\\Repositórios\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj": {}
   },
   "projects": {
-    "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj": {
+    "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj",
+        "projectUniqueName": "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj",
         "projectName": "FormatTCC.Application",
-        "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj",
+        "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj",
         "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\obj\\",
+        "outputPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +26,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
-                "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj"
+              "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
+                "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj"
               }
             }
           }
@@ -38,6 +43,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -55,6 +63,10 @@
             "MediatR": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.24.0, )"
             }
           },
           "imports": [
@@ -68,26 +80,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
+    "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj",
+        "projectUniqueName": "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj",
         "projectName": "FormatTCC.Core",
-        "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj",
+        "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj",
         "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\obj\\",
+        "outputPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,6 +125,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,6 +138,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -115,7 +149,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.13, )"
             }
           },
           "imports": [
@@ -129,26 +163,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj": {
+    "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj",
+        "projectUniqueName": "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj",
         "projectName": "FormatTCC.Infrastructure",
-        "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj",
+        "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\obj\\",
+        "outputPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -156,14 +208,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
-                "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj"
+              "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj": {
+                "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Core\\FormatTCC.Core.csproj"
               }
             }
           }
@@ -172,12 +225,19 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.11, )"
@@ -208,26 +268,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj": {
+    "D:\\Repositórios\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj",
+        "projectUniqueName": "D:\\Repositórios\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj",
         "projectName": "FormatTCC.API",
-        "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj",
+        "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC\\FormatTCC.API.csproj",
         "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC\\obj\\",
+        "outputPath": "D:\\Repositórios\\FormatTCC\\FormatTCC\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -235,17 +313,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj": {
-                "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj"
+              "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj": {
+                "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj"
               },
-              "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj": {
-                "projectPath": "D:\\Repositórios\\Enviar Arquivo\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj"
+              "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj": {
+                "projectPath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Infrastructure\\FormatTCC.Infrastructure.csproj"
               }
             }
           }
@@ -254,6 +333,9 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
         }
       },
       "frameworks": {
@@ -263,6 +345,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.13, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[7.0.12, )"
             },
             "Microsoft.AspNetCore.OpenApi": {
               "target": "Package",
@@ -294,6 +384,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.12, 7.0.12]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -302,7 +410,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100-rc.2.23502.2\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -10,8 +10,19 @@ namespace FormatTCC.Infrastructure.Mappings
         {
 
             builder
+                .Property(user => user.Name)
+                .IsRequired()
+                .HasColumnType("VARCHAR(250)");
+
+            builder
+                .Property(user => user.SurName)
+                .IsRequired()
+                .HasColumnType("VARCHAR(250)");
+
+            builder
                 .Property(user => user.RegisterDate)
                 .IsRequired()
+                .HasDefaultValueSql("GETDATE()")
                 .HasColumnType("SMALLDATETIME");
 
             builder

@@ -1,5 +1,4 @@
-﻿using FluentValidation.AspNetCore;
-using FormatTCC.Application.Commands.CommandValidators;
+﻿using Microsoft.OpenApi.Models;
 
 namespace FormatTCC.API.Configurations
 {
@@ -10,9 +9,8 @@ namespace FormatTCC.API.Configurations
         {
 
             services.AddControllers();
-
+            services.AddMvc();
             services.AddEndpointsApiExplorer();
-            services.AddSwaggerGen();
 
         }
 
@@ -26,11 +24,9 @@ namespace FormatTCC.API.Configurations
             }
 
             app.UseHttpsRedirection();
-
+            app.UseAuthentication();
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
 
         }
