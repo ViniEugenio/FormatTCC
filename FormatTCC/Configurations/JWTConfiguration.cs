@@ -34,7 +34,13 @@ namespace FormatTCC.API.Configurations
                     ValidateIssuer = true,
                     ValidAudience = jwtSettings.ValidIn,
                     ValidateAudience = true,
-                    ValidIssuer = jwtSettings.Issuer
+                    ValidIssuer = jwtSettings.Issuer,
+                    ValidateLifetime = true,
+                    ClockSkew = TimeSpan.Zero,
+                    ValidTypes = new List<string>
+                    {
+                        "jwt_at"
+                    }
                 };
             });
 

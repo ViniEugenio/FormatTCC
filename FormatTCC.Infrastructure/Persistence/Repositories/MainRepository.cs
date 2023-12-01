@@ -24,9 +24,18 @@ namespace FormatTCC.Infrastructure.Persistence.Repositories
             return db.Where(predicate);
         }
 
-        public IQueryable<T> GetAllQueryableAsNoTracking(Expression<Func<T, bool>> predicate)
+        public IQueryable<T> GetAllQueryableAsNoTracking(params Expression<Func<T, bool>>[] predicates)
         {
-            return db.Where(predicate).AsNoTracking();
+
+            var query = db.AsNoTracking();
+
+            foreach (var predicate in predicates)
+            {
+                query = query.Where(predicate);
+            }
+
+            return query;
+
         }
 
         public async Task<T?> SingleOrDefaultAsNoTracking(Expression<Func<T, bool>> predicate)
@@ -60,19 +69,40 @@ namespace FormatTCC.Infrastructure.Persistence.Repositories
 
         }
 
-        public void Update(T item)
+        public async Task Update(T item)
         {
+
             db.Update(item);
+            await context.SaveChangesAsync();
+
         }
 
-        public void UpdateRange(IEnumerable<T> items)
+        public async Task UpdateRange(IEnumerable<T> items)
         {
+
             db.UpdateRange(items);
+            await context.SaveChangesAsync();
+
         }
 
         public async Task<bool> AnyAsync(Expression<Func<T, bool>> predicate)
         {
             return await db.AnyAsync(predicate);
+        }
+
+        public async Task BeginTransaction()
+        {
+            await context.Database.BeginTransactionAsync();
+        }
+
+        public async Task CommitTransaction()
+        {
+            await context.Database.CommitTransactionAsync();
+        }
+
+        public async Task RollbackTransaction()
+        {
+            await context.Database.RollbackTransactionAsync();
         }
 
     }

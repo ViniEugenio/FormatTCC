@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KKdn1azVFz2RMrrlmqklaCD6DPhD6cvZsJr7MTBNMMalLKJeGeIMNcnHozzJSaoCm/w7M+D3NlkRMCl1TXG1LA==",
+  "dgSpecHash": "MX7I70ZZaOSqQzyXJyc3aZiuj++mw9kyH2/1goXugA2i5tLq5jf7vX0ZKHfPZh32nTQzp4UOqxTw/c/9jZarvA==",
   "success": true,
   "projectFilePath": "D:\\Repositórios\\FormatTCC\\FormatTCC.Application\\FormatTCC.Application.csproj",
   "expectedPackageFiles": [
@@ -39,10 +39,7 @@
     "C:\\Users\\vinic\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",
     "C:\\Users\\vinic\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
     "C:\\Users\\vinic\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
-    "C:\\Users\\vinic\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512",
-    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.12\\microsoft.windowsdesktop.app.ref.7.0.12.nupkg.sha512",
-    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.12\\microsoft.netcore.app.ref.7.0.12.nupkg.sha512",
-    "C:\\Users\\vinic\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.12\\microsoft.aspnetcore.app.ref.7.0.12.nupkg.sha512"
+    "C:\\Users\\vinic\\.nuget\\packages\\system.text.json\\4.7.2\\system.text.json.4.7.2.nupkg.sha512"
   ],
   "logs": []
 }

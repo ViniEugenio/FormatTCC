@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 using FormatTCC.Application.Commands.ChangePassword;
-using FormatTCC.Application.Helpers.Errors;
+using FormatTCC.Application.Errors;
 
 namespace FormatTCC.Application.Commands.CommandValidators
 {

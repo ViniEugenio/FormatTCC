@@ -1,18 +1,16 @@
-﻿using FormatTCC.Application.Helpers.Errors;
-using FormatTCC.Application.Helpers.Messages;
-using FormatTCC.Application.Models.ViewModels;
+﻿using FormatTCC.Application.Models.ViewModels;
 using FormatTCC.Core.Interfaces.Repositories;
 using MediatR;
 
 namespace FormatTCC.Application.Commands.SignInOut
 {
 
-    public class SignOutCommand : IRequest<InputResultViewModel>
+    public class SignOutCommand : IRequest<InputResultViewModel<object>>
     {
 
     }
 
-    public class SignOutCommandHandler : IRequestHandler<SignOutCommand, InputResultViewModel>
+    public class SignOutCommandHandler : IRequestHandler<SignOutCommand, InputResultViewModel<object>>
     {
 
         private readonly IUserRepository userRepository;
@@ -22,13 +20,11 @@ namespace FormatTCC.Application.Commands.SignInOut
             this.userRepository = userRepository;
         }
 
-        public async Task<InputResultViewModel> Handle(SignOutCommand request, CancellationToken cancellationToken)
+        public async Task<InputResultViewModel<object>> Handle(SignOutCommand request, CancellationToken cancellationToken)
         {
 
-            var autheticatedUser = await userRepository.GetAutheticatedUser();
             await userRepository.SignOut();
-
-            return new InputResultViewModel(UserMessages.SignOutSuccessMessage(autheticatedUser.Name));
+            return new();
 
         }
 

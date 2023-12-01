@@ -3,9 +3,9 @@ using MediatR;
 
 namespace FormatTCC.Application.Commands.ChangePassword
 {
-    public class ChangePasswordCommand : IRequest<InputResultViewModel>
+    public class ChangePasswordCommand : IRequest<InputResultViewModel<object>>
     {
-        public string CurrentPassword { get; set; }
-        public string NewPassword { get; set; }
+        public required string CurrentPassword { get; set; }
+        public required string NewPassword { get; set; }
     }
 }

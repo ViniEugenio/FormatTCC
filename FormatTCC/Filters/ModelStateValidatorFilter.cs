@@ -14,12 +14,14 @@ namespace FormatTCC.API.Filters
         public void OnActionExecuting(ActionExecutingContext context)
         {
 
-            if (!context.ModelState.IsValid)
+            if (context.HttpContext.Request.Method != "GET" && !context.ModelState.IsValid)
             {
 
-                var errors = context.ModelState.GetErrorsMessages();
+                var inputResult = new InputResultViewModel<object>();
 
-                var inputResult = new InputResultViewModel("As informações de entrada não são válidas", errors);
+                var errors = context.ModelState.GetErrorsMessages();
+                inputResult.AddErrors(errors);
+
                 context.Result = new BadRequestObjectResult(inputResult);
 
             }

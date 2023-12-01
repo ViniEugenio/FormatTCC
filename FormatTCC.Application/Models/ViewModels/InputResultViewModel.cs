@@ -1,37 +1,28 @@
 ﻿namespace FormatTCC.Application.Models.ViewModels
 {
-    public class InputResultViewModel
+    public class InputResultViewModel<T> where T : class?
     {
 
-        public string Message { get; set; } = string.Empty;
+        public string Message { get; set; } = "Sua requisição foi processada com sucesso";
         public List<string> Errors { get; set; } = new List<string>();
-        public object Data { get; set; }
+        public T? Data { get; set; }
 
-        public InputResultViewModel(string message, object? values = null)
+        public void AddErrors(params string[] errors)
         {
-            Message = message;
-            Data = values;
-        }
 
-        public InputResultViewModel(string message, params string[] errors)
-        {
-            Message = message;
+            if (!errors.Any())
+            {
+                return;
+            }
+
             Errors.AddRange(errors);
+            Message = "Não foi possível processar sua requisição";
+
         }
 
-        public void AddError(string error)
+        public void AddData(T data)
         {
-            Errors.Add(error);
-        }
-
-        public void AddErrors(List<string> errors)
-        {
-            Errors.AddRange(errors);
-        }
-
-        public void SetMessage(string message)
-        {
-            Message = message;
+            Data = data;
         }
 
         public bool IsValid()

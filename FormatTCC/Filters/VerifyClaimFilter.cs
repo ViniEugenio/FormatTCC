@@ -36,7 +36,12 @@ namespace FormatTCC.API.Filters
             return context
                 .User
                 .Claims
-                .Any(claim => claim.Type == claimName && claim.Value == claimValue);
+                .Any(claim =>
+
+                    (claim.Type == "Admin" && claim.Value == "Admin")
+                    || (claim.Type == claimName && claim.Value == claimValue)
+
+                );
 
         }
 

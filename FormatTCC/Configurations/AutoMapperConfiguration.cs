@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using FormatTCC.Application.Commands.AddUser;
+using FormatTCC.Application.Models.ViewModels;
 using FormatTCC.Core.Entities;
 
 namespace FormatTCC.API.Configurations
@@ -14,6 +15,7 @@ namespace FormatTCC.API.Configurations
             {
 
                 cfg.CreateMap<AddUserCommand, User>();
+                cfg.CreateMap<User, UserInfoViewModel>();
 
             });
 

@@ -5,11 +5,11 @@ VisualStudioVersion = 17.7.34024.191
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatTCC.API", "FormatTCC\FormatTCC.API.csproj", "{D9DD3D5B-21CD-4C07-9EA7-A3FEDADDE390}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatTCC.Core", "FormatTCC.Core\FormatTCC.Core.csproj", "{7962CF9F-D4AE-4CC2-91FB-43827FC59B88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatTCC.Core", "FormatTCC.Core\FormatTCC.Core.csproj", "{7962CF9F-D4AE-4CC2-91FB-43827FC59B88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatTCC.Application", "FormatTCC.Application\FormatTCC.Application.csproj", "{CF1D52F4-5EBA-4E42-8B9B-152E01D857B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatTCC.Application", "FormatTCC.Application\FormatTCC.Application.csproj", "{CF1D52F4-5EBA-4E42-8B9B-152E01D857B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatTCC.Infrastructure", "FormatTCC.Infrastructure\FormatTCC.Infrastructure.csproj", "{BAEFA3B2-CAF7-4035-BD61-D5915AD09B89}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormatTCC.Infrastructure", "FormatTCC.Infrastructure\FormatTCC.Infrastructure.csproj", "{BAEFA3B2-CAF7-4035-BD61-D5915AD09B89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

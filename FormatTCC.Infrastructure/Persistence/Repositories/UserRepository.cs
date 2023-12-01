@@ -24,19 +24,24 @@ namespace FormatTCC.Infrastructure.Persistence.Repositories
 
         }
 
-        public async Task<IdentityResult> AddUser(User user, string password)
+        public async Task<(IdentityResult, User)> AddUser(User user, string password)
         {
-            return await userManager.CreateAsync(user, password);
+
+            var result = await userManager.CreateAsync(user, password);
+
+            if (!result.Succeeded)
+            {
+                return (result, new User());
+            }
+
+            var foundUser = await userManager.FindByNameAsync(user.UserName);
+            return (result, foundUser);
+
         }
 
-        public async Task<(SignInResult, User)> Login(string userName, string password)
+        public async Task<SignInResult> Login(User user, string password)
         {
-
-            var foundedUser = await userManager.FindByNameAsync(userName);
-            var loginResult = await signInManager.PasswordSignInAsync(foundedUser, password, false, true);
-
-            return (loginResult, foundedUser);
-
+            return await signInManager.PasswordSignInAsync(user, password, false, true);
         }
 
         public async Task SignOut()
@@ -81,7 +86,28 @@ namespace FormatTCC.Infrastructure.Persistence.Repositories
 
         public async Task<IEnumerable<Claim>> GetUserClaims(User user)
         {
-            return await userManager.GetClaimsAsync(user);
+            return await userManager.GetClaimsAsync(user);           
+        }
+
+        public async Task<ClaimsIdentity> GetUserClaimsForToken(User user)
+        {
+
+            var foundUserClaims = await GetUserClaims(user);
+            if (!foundUserClaims.Any())
+            {
+                return new ClaimsIdentity();
+            }
+
+            var userClaims = new ClaimsIdentity();
+            userClaims.AddClaims(foundUserClaims);
+
+            return userClaims;
+
+        }
+
+        public async Task<IdentityResult> AddUserClaim(User user, List<Claim> claims)
+        {
+            return await userManager.AddClaimsAsync(user, claims);
         }
 
     }

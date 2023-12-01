@@ -31,6 +31,8 @@ namespace FormatTCC.Infrastructure.Mappings
                 .HasDefaultValue(true)
                 .HasColumnType("BIT");
 
+            builder.HasMany(user => user.Claims).WithOne().HasForeignKey(claim => claim.UserId);
+
         }
     }
 }

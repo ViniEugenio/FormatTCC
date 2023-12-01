@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
-using FormatTCC.Application.Commands.Login;
-using FormatTCC.Application.Helpers.Errors;
+using FormatTCC.Application.Commands.SignIn;
+using FormatTCC.Application.Errors;
 
 namespace FormatTCC.Application.Commands.CommandValidators
 {

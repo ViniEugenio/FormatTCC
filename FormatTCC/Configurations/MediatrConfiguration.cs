@@ -9,7 +9,7 @@ namespace FormatTCC.API.Configurations
         {
 
             services.AddMediatR(config =>
-                config.RegisterServicesFromAssemblies(typeof(AddUserCommand).Assembly)
+                config.RegisterServicesFromAssemblyContaining<AddUserCommand>()
             );
 
         }

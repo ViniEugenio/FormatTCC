@@ -1,7 +1,12 @@
-﻿using FormatTCC.Application.Commands.AddUser;
+﻿using FormatTCC.API.Filters;
+using FormatTCC.Application.Commands.AddUser;
 using FormatTCC.Application.Commands.ChangePassword;
-using FormatTCC.Application.Commands.Login;
+using FormatTCC.Application.Commands.ChangeUserStatus;
+using FormatTCC.Application.Commands.RefreshAccessToken;
+using FormatTCC.Application.Commands.SignIn;
 using FormatTCC.Application.Commands.SignInOut;
+using FormatTCC.Application.Queries.GetUserInfo;
+using FormatTCC.Application.Queries.GetUserList;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,60 +14,66 @@ using Microsoft.AspNetCore.Mvc;
 namespace FormatTCC.API.Controllers
 {
 
-    [Route("api/User")]
+    [Route("api/[controller]")]
     [Authorize]
     public class UserController : BaseController
     {
 
-        private readonly IMediator mediator;
-
-        public UserController(IMediator mediator)
+        public UserController(IMediator mediator) : base(mediator)
         {
-            this.mediator = mediator;
         }
 
         [HttpPost]
         [AllowAnonymous]
         public async Task<IActionResult> CreateUser([FromBody] AddUserCommand command)
         {
-
-            var result = await mediator.Send(command);
-            return RespondInput(result);
-
+            return await RespondInput(command);
         }
 
         [HttpPost("SignIn")]
         [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] SignInCommand command)
         {
+            return await RespondInput(command);
+        }
 
-            var result = await mediator.Send(command);
-            return RespondInput(result);
-
+        [HttpPost("RefreshUserAccessToken")]
+        [AllowAnonymous]
+        public async Task<IActionResult> RefreshUserAccessToken([FromBody] RefreshAccessTokenCommand command)
+        {
+            return await RespondInput(command);
         }
 
         [HttpPost("SignOut")]
         public async Task<IActionResult> LogOut()
         {
-
-            var result = await mediator.Send(new SignOutCommand());
-            return RespondInput(result);
-
+            return await RespondInput(new SignOutCommand());
         }
 
         [HttpPost("ChangePassword")]
         public async Task<IActionResult> ChangePassword([FromBody] ChangePasswordCommand command)
         {
+            return await RespondInput(command);
+        }
 
-            var result = await mediator.Send(command);
-            return RespondInput(result);
-
+        [HttpGet("GetUserInfo")]
+        public async Task<IActionResult> GetUserInfo()
+        {
+            return await RespondQuery(new GetuserQuery());
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetUserInfo()
+        [ClaimAuthorize("User", "List")]
+        public async Task<IActionResult> GetUserList([FromQuery] GetUserListQuery query)
         {
-            return Ok("Informações do usuário logado");
+            return await RespondQuery(query);
+        }
+
+        [HttpPatch("ChangeUserStatus")]
+        [ClaimAuthorize("User", "Update")]
+        public async Task<IActionResult> ChangeUserStatus([FromBody] ChangeUserStatusCommand command)
+        {
+            return await RespondInput(command);
         }
 
     }

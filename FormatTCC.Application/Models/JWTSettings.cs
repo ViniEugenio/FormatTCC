@@ -2,9 +2,8 @@
 {
     public class JWTSettings
     {
-        public string Secret { get; set; }
-        public int Expiration { get; set; }
-        public string Issuer { get; set; }
-        public string ValidIn { get; set; }
+        public required string Secret { get; set; }
+        public required string Issuer { get; set; }
+        public required string ValidIn { get; set; }
     }
 }

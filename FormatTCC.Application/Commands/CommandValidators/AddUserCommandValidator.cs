@@ -1,7 +1,6 @@
 ﻿using FluentValidation;
 using FormatTCC.Application.Commands.AddUser;
-using FormatTCC.Application.Helpers.Errors;
-using FormatTCC.Application.Helpers.Messages;
+using FormatTCC.Application.Errors;
 
 namespace FormatTCC.Application.Commands.CommandValidators
 {

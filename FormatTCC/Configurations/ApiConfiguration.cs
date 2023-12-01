@@ -11,6 +11,17 @@ namespace FormatTCC.API.Configurations
             services.AddControllers();
             services.AddMvc();
             services.AddEndpointsApiExplorer();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyOrigin",
+                    builder =>
+                    {
+                        builder
+                            .AllowAnyOrigin()
+                            .AllowAnyMethod()
+                            .AllowAnyHeader();
+                    });
+            });
 
         }
 
@@ -28,6 +39,7 @@ namespace FormatTCC.API.Configurations
             app.UseAuthorization();
             app.MapControllers();
             app.Run();
+            app.UseCors("AllowAnyOrigin");
 
         }
 

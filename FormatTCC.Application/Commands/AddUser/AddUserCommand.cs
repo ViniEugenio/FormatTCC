@@ -3,7 +3,7 @@ using MediatR;
 
 namespace FormatTCC.Application.Commands.AddUser
 {
-    public class AddUserCommand : IRequest<InputResultViewModel>
+    public class AddUserCommand : IRequest<InputResultViewModel<object>>
     {
         public string Name { get; set; }
         public string SurName { get; set; }
